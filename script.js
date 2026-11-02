@@ -29,7 +29,7 @@ form.addEventListener('submit', async (e) => {
 		if (bad) valid = false;
 	}
 	if (!valid) {
-		statusEl.textContent = 'Please enter your name and a valid email.';
+		statusEl.textContent = 'We need your name and a working email address.';
 		statusEl.className = 'error';
 		return;
 	}
@@ -43,11 +43,11 @@ form.addEventListener('submit', async (e) => {
 			});
 			if (!res.ok) throw new Error();
 		} catch {
-			statusEl.textContent = 'Something went wrong. Please try again later.';
+			statusEl.textContent = "That didn't go through. Try again in a bit.";
 			statusEl.className = 'error';
 			return;
 		}
 	}
-	statusEl.textContent = `Thanks, ${form.name.value.trim()}! 🌱 We'll be in touch soon.`;
+	statusEl.textContent = `Thanks, ${form.name.value.trim()}. You're on the list.`;
 	form.reset();
 });

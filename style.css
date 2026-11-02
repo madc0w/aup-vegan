@@ -118,29 +118,6 @@ nav a:not(.btn):hover { color: var(--green); }
 .why { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 2rem; }
 .why h3 { color: var(--green); }
 
-.join form {
-	max-width: 560px;
-	display: grid;
-	gap: 1rem;
-	background: #fff;
-	padding: 2rem;
-	border-radius: 18px;
-	box-shadow: 0 4px 18px rgba(31, 74, 42, .08);
-}
-label { display: grid; gap: .35rem; font-weight: 600; }
-.optional { font-weight: 400; opacity: .6; }
-input, select, textarea {
-	font: inherit;
-	padding: .7rem .9rem;
-	border: 1.5px solid #cfd8cc;
-	border-radius: 10px;
-	background: var(--cream);
-}
-input:focus, select:focus, textarea:focus { outline: 3px solid var(--leaf); border-color: var(--green); }
-input.invalid { border-color: #c0392b; }
-#form-status { margin: 0; font-weight: 600; color: var(--green); }
-#form-status.error { color: #c0392b; }
-
 footer { background: var(--green-dark); color: #e8f1e6; text-align: center; padding: 2rem 1rem; }
 footer p { margin: .2rem 0; }
 footer .small { font-size: .85rem; opacity: .7; }
